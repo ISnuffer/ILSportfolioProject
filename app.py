@@ -49,7 +49,7 @@ def bJQ():
     print(jsonify(data))
 
     #Connection String 
-    engine = sa.create_engine('mysql+pymysql://ISnuffer:rootPassWord!8675309@ISnuffer.mysql.pythonanywhere-services.com/ISnuffer.mysql.pythonanywhere-services.com')
+    engine = sa.create_engine(redactedConnectionString)
     
     with Session(engine) as session:
         actionFactors = session.query('State').filter_by(deckFactor=data['deckFactor'], stateFactor=data['stateFactor']).one_or_none()
@@ -112,7 +112,7 @@ def dCIQ():
     
     #First we write our Game Insert Query
     #Connection string
-    cnxn = connection.connect(host="ISnuffer.mysql.pythonanywhere-services.com", database="ISnuffer$blackJackData", user="ISnuffer", password="rootPassWord!8675309",use_pure=True)
+    cnxn = connection.connect(redactedConnectionString)
     print("Connection established")
     formatted_timestamp = datetime.strptime(data["timeStamp"], "%m/%d/%Y, %I:%M:%S %p").strftime("%Y-%m-%d %H:%M:%S")
     print(formatted_timestamp)
