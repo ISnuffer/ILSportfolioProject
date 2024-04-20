@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac L. Snuffer Portfolio</title>
+  </head>
+  <body>
+	<div id="buffer-top" class="buffer-top">
+		<div id="site-link-table-mbl" class="link-table">
+			<div class="link-body">
+				<ul id="linkListMbl">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="header-bar" class="header">
+		<div id="header-frame" class="frame">
+			<h1 id="title">Isaac L. Snuffer</h1>
+			<h3>Portfolio</h3>
+		</div>
+	</div>
+	<div id="menu-bar" class="menu">
+		<div id="nav-link-table" class="link-table">
+			<div class="headerRow">
+				<h4><u>Navigation</u></h4>
+			</div>
+
+			<div class="link-body">
+				<ul>
+
+				</ul>
+			</div>
+		</div>
+		<div id="site-link-table" class="link-table">
+			<div class="headerRow">
+				<h4><u>Pages</u></h4>
+			</div>
+
+			<div class="link-body">
+				<ul id="linkList">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="main-content" class="main">
+		<table id="game">
+            <tr>
+                <td id="ta1" class="position"><p id="A1" class="marker"></p></td>
+                <td id="ta2" class="position"><p id="A2" class="marker"></p></td>
+                <td id="ta3" class="position"><p id="A3" class="marker"></p></td>
+            </tr>
+            <tr>
+                <td id="tb1" class="position"><p id="B1" class="marker"></p></td>
+                <td id="tb2" class="position"><p id="B2" class="marker"></p></td>
+                <td id="tb3" class="position"><p id="B3" class="marker"></p></td>
+            </tr>
+            <tr>
+                <td id="tc1" class="position"><p id="C1" class="marker"></p></td>
+                <td id="tc2" class="position"><p id="C2" class="marker"></p></td>
+                <td id="tc3" class="position"><p id="C3" class="marker"></p></td>
+            </tr>
+        </table>
+        <form id="add_player">
+            <fieldset>
+                <h3>Enter User Information</h3><br>
+                <label for="name_input">Name: </label><input id="name_input" type="text"><br>
+                <label for="marker_select">Marker: </label><select id="marker_select">
+					<option value = "X">X</option>
+					<option value = "O">O</option>
+				</select><br>
+                <button id="Player_submit" type="button">Add Player</button>
+            </fieldset>
+        </form>
+        <div id="TTTM" class="messages"></div>
+        <button id="play">Play</button>
+		<form id="controller">
+			<select title="positionSelectTitle" id="positionSelect">
+				<option value = "A1">A1</option>
+				<option value = "A2">A2</option>
+				<option value = "A3">A3</option>
+				<option value = "B1">B1</option>
+				<option value = "B2">B2</option>
+				<option value = "B3">B3</option>
+				<option value = "C1">C1</option>
+				<option value = "C2">C2</option>
+				<option value = "C3">C3</option>
+			</select>
+			<button id="choose" type = "button">Select Position</button>
+		</form>
+	</div>
+	<div class="buffer-bottom"></div>
+	<div id="footer" class="footer"></div>
+    <script src="/static/js/script.js"></script>
+	<script src="/static/js/updateLinks.js"></script>
+  </body>
+
+</html>

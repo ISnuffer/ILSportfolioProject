@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac L. Snuffer Portfolio</title>
+  </head>
+  <body>
+	<div id="buffer-top" class="buffer-top">
+		<div id="site-link-table-mbl" class="link-table">
+			<div class="link-body">
+				<ul id="linkListMbl">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="header-bar" class="header">
+		<div id="header-frame" class="frame">
+			<h1 id="title">Isaac L. Snuffer</h1>
+			<h3>Portfolio</h3>
+		</div>
+	</div>
+	<div id="menu-bar" class="menu">
+		<div id="nav-link-table" class="link-table">
+			<div class="headerRow">
+				<h4><u>Navigation</u></h4>
+			</div>
+
+			<div class="link-body">
+				<ul>
+
+				</ul>
+			</div>
+		</div>
+		<div id="site-link-table" class="link-table">
+			<div class="headerRow">
+				<h4><u>Pages</u></h4>
+			</div>
+
+			<div class="link-body">
+				<ul id="linkList">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="main-content" class="main">
+	  <div id="messages"></div>
+	  <form id="gui">
+		<fieldset id="playerData">
+			<label for="nameInput" id="nameInputLabel">Name: </label><span id="nameLocation"><span id="playerName"></span><input type="text" id="nameInput"></span>
+			<button type="button" id="startHumanGame">Start Game</button><button type="button" id="startBotGame">Start Bot Game</button>
+			<label for="count" id="countLabel">Game Count: </label><input type="text" id="count"><br>
+			<label for="chips" id="chipsLabel">Chips: </label><span id="chips">200</span><br>
+			<label for="roundNo" id="roundNoLabel">Round: </label><span id="roundNo">0</span><br>
+			<label for="wins" id="winsLabel">Wins: </label><span id="wins">0</span><br>
+			<label for="losses" id="lossesLabel">Losses: </label><span id="losses">0</span><br>
+			<label for="anteInput" id="anteInputLabel">Ante: </label><span id="anteLocation"><span id="ante"></span><input type="text" id="anteInput"><button type="button" id="anteUp">Increase</button><button type="button" id="anteDown">Decrease</button><button type="button" id="anteSubmit">Submit</button></span>
+		</fieldset>
+		<fieldset id="userActions">
+			<select id="actionSelect" title="actionSelect"></select><label for="currentScore" id="currentScoreLabel">Score: </label><span id="currentScore"></span><br>
+			<button type="button" id="actionButton">Commit</button>
+		</fieldset>
+	  </form>
+	  <div id="blackJackTable">
+            <img src="/static/imgs/B.jpg" id="cardDeck" class="card" alt="Hidden_Card"></img>
+			<div id="splitStack" class="stack">
+            	<div id="splitCardOne" class="card shown one split">
+					<div class="topLeft corner"></div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner"></div>
+					<div class="center"></div>
+				</div>
+            	<div id="splitCardTwo" class="card shown two split">
+					<div class="topLeft corner"></div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner"></div>
+					<div class="center"></div>
+				</div>
+            	<div id="splitCardThree" class="card shown three split">
+					<div class="topLeft corner"></div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">2</div>
+					<div class="center"></div>
+				</div>
+            	<div id="splitCardFour" class="card shown four split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="splitCardFive" class="card shown five split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="splitCardSix" class="card shown six split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="splitCardSeven" class="card shown seven split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="splitCardEight" class="card shown eight split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="splitCardNine" class="card shown nine split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="splitCardTen" class="card shown ten split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="splitCardEleven" class="card shown eleven split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="splitCardTwelve" class="card shown twelve split">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+			</div>
+			<div id="mainStack" class="stack">
+            	<div id="dealerShownCard" class="card shown dealerCard">
+					<div class="topLeft corner"></div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">4</div>
+					<div class="center"></div>
+				</div>
+            	<img src="/static/imgs/B.jpg" id="dealerHiddenCard" class="card dealerCard" alt="Hidden_Card"></img>
+            	<div id="playerCardOne" class="card shown one playerCard">
+					<div class="topLeft corner"></div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner"></div>
+					<div class="center"></div>
+				</div>
+            	<div id="playerCardTwo" class="card shown two playerCard">
+					<div class="topLeft corner"></div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner"></div>
+					<div class="center"></div>
+				</div>
+            	<div id="playerCardThree" class="card shown three playerCard">
+					<div class="topLeft corner"></div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">2</div>
+					<div class="center"></div>
+				</div>
+            	<div id="playerCardFour" class="card shown four playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="playerCardFive" class="card shown five playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="playerCardSix" class="card shown six playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="playerCardSeven" class="card shown seven playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="playerCardEight" class="card shown eight playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="playerCardNine" class="card shown nine playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="playerCardTen" class="card shown ten playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="playerCardEleven" class="card shown eleven playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+				<div id="playerCardTwelve" class="card shown twelve playerCard">
+					<div class="topLeft corner">A</div>
+					<div class="topRight corner"></div>
+					<div class="bottomLeft corner"></div>
+					<div class="bottomRight corner">A</div>
+					<div class="center"></div>
+				</div>
+			</div>
+          </div>
+	</div>
+	<div class="buffer-bottom"></div>
+	<div id="footer" class="footer"></div>
+	<script src="/static/js/updateLinks.js"></script>
+	<script src="/static/js/blackjack.js"></script>
+  </body>
+
+</html>
